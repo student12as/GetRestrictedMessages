@@ -29,8 +29,6 @@ try:
 except BaseException as ex:
     log.info(ex)
 
-AUTH_USERS = [int(x) for x in AUTHS_USERS.split(" ")]
-
 log.info("Connecting bot.")
 try:
     client = TelegramClient(
