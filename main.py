@@ -25,7 +25,7 @@ try:
     API_ID = config("API_ID", cast=int)
     API_HASH = config("API_HASH")
     SESSION = config("SESSION")
-    AUTHS_USERS = config("AUTHS")
+    AUTHS_USERS = config("AUTHS_USERS")
 except BaseException as ex:
     log.info(ex)
 
