@@ -29,7 +29,7 @@ try:
 except BaseException as ex:
     log.info(ex)
 
-AUTH_USERS = [int(x) for x in AUTHS.split(" ")]
+AUTH = [int(x) for x in AUTHS.split(" ")]
 
 log.info("Connecting bot.")
 try:
