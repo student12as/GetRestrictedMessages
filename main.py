@@ -25,11 +25,11 @@ try:
     API_ID = config("API_ID", cast=int)
     API_HASH = config("API_HASH")
     SESSION = config("SESSION")
-    AUTHS = config("AUTHS")
+    AUTHS_USERS = config("AUTHS")
 except BaseException as ex:
     log.info(ex)
 
-AUTH_USERS = [int(x) for x in AUTHS.split(" ")]
+AUTH_USERS = [int(x) for x in AUTHS_USERS.split(" ")]
 
 log.info("Connecting bot.")
 try:
